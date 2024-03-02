@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #c3bef0;
+}
+.container{
+    padding: 10px;
+}
+
+
+.addNoteButton{
+    width: 100px;
+    height: 30px;
+    background-color: #6643b5;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.addNoteButton:hover{
+    transform: scale(1.08);
+    transition: 200ms;
+}
+
+.wave-group {
+    position: relative;
+  }
+  
+  .wave-group .input {
+    margin-top: 8px;
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-group .input:focus ~ label .label-char,
+  .wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 16px;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 215px;
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  
+
+.notesWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notes{
+    width: 350px;
+    height: 300px;
+    margin: 7px;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.buttonsDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -25px;
+}
+.buttonsDiv button{
+  margin:5px;
+  width: 60px;
+  height: 22px;
+  border: 1.1px solid #757a79;
+  border-radius: 4px;
+  background-color: #6643b5;
+  color: white;
+}
+.inputEdit{
+    width: 230px;
+    height: 18px; 
+    margin-left: 5px;
+    border: 1.1px solid #757a79;
+    border-radius: 10px;
+    padding: 5px;
+}
+.confirmButton{
+  margin: 7px;
+  width: 55px;
+  height: 22px;
+  border: 1.1px solid #757a79;
+  border-radius: 4px;
+  background-color: #6643b5;
+  color: white;
+}
